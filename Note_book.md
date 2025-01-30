@@ -163,4 +163,7 @@ drwxrws--- 2 root projekti 4096 Jan 30 16:02 /opt/projekti
 
 # image 
 
-![alt text](2.png) ![alt text](3.png) ![alt text](4.png) ![alt text](1.png)
+![alt text](1.png)
+![alt text](2.png)
+![alt text](3.png)
+![alt text](4.png)
