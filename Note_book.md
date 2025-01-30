@@ -159,11 +159,12 @@ sudo chmod g+s /opt/projekti
 
 ```plaintext
 drwxrws--- 2 root projekti 4096 Jan 30 16:02 /opt/projekti
+```
+
+# image: 
 
 
-# image 
-
-![alt text](1.png)
-![alt text](2.png)
-![alt text](3.png)
-![alt text](4.png)
+![](image/1.png)
+![](image/2.png)
+![](image/3.png)
+![](image/4.png)
