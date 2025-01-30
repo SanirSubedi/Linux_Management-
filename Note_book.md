@@ -68,3 +68,102 @@ Configure the network by:
 ![](image/lab-robotics%20-%20Microsoft%20Azure_page-0003.jpg)
 ![](image/Overview%20.png)
 ![](image/Screenshot%202025-01-20%20111802.png)
+
+
+
+
+# 30/01/2025
+
+# amk1002731@student.hamk.fi
+## Step 1:
+- First of all I create two users named **tupu** and **lupu**.
+- Then set **password** and other necessary information so that only that user can access the file.
+- I used sudo and adduser command for that.
+
+```bash
+sudo adduser tupu
+```
+
+## Step 2:
+- Then I create lupu user using useradd command.
+
+```bash
+sudo useradd -m -d /home/lupu -s /bin/bash -G lupu lupu
+```
+
+- -m: Create the user's home directory.
+- -d /home/lupu: Specify the home directory path.
+- -s /bin/bash: Set the login shell to /bin/bash.
+- -G lupu: Add the user to the lupu group.
+
+## Step 3: 
+- Furthermore, I create the hupu system user with the login shell set to **/bin/false** file.
+
+```bash
+sudo useradd --system --shell /bin/false hupu
+```
+
+- --system: Create a system account.
+- --shell /bin/false: Set the login shell to /bin/false to prevent login.
+
+## Step 4: 
+- Then I use **visudo** to edit the sudoers file
+
+```bash
+sudo visudo
+```
+
+- Then add the following lines for both users:
+
+```plaintext
+tupu ALL=(ALL:ALL) ALL
+lupu ALL=(ALL:ALL) ALL
+```
+
+- There is another method as well but I present here only the above one, though I ran both.
+
+## Step 5:
+- I create a directory in **/opt/projekti** and add both users
+
+```bash
+sudo mkdir /opt/projekti
+```
+
+- Then create a group called projekti and assign both tupu and lupu into the group with the commands:
+
+```bash
+sudo groupadd projekti
+sudo usermod -aG projekti tupu
+sudo usermod -aG projekti lupu
+```
+
+- And give ownership to the projekti group.
+
+```bash
+sudo chown :projekti /opt/projekti
+```
+
+- And **set permission** so that tupu and lupu can access the files in all three formats like read, write, and execute.
+
+```bash
+sudo chmod 770 /opt/projekti
+```
+
+- The following command ensures that any new files created within the /opt/projekti directory inherit the group ownership of projekti, maintaining the desired permissions.
+
+```bash
+sudo chmod g+s /opt/projekti
+```
+
+## Output:
+
+```plaintext
+drwxrws--- 2 root projekti 4096 Jan 30 16:02 /opt/projekti
+
+
+# image 
+
+![](image/1.png)
+![](image/2.png)
+![](image/3.png)
+![](image/4.png)

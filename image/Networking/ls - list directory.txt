@@ -1,0 +1,32 @@
+ls - list directory 
+pwd - print working directory 
+cd / - change directory 
+etc bin dev
+
+
+
+ls -l - list long 
+ls -a- hidden file 
+ls -h - humman readable 
+ls -p - parent and a child files 
+
+1:25:21 
+
+man touch 
+cd documents/
+touch file1.txt 
+ls 
+touch file2.txt file3.txt 
+ls
+ 
+
+remove file 
+
+rm file1.txt 
+
+if you want to verify the remove file use -i 
+rm -i 
+
+Sanie123
+Sanir1234
+
