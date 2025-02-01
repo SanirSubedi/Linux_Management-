@@ -74,7 +74,7 @@ Configure the network by:
 
 # 30/01/2025
 
-# amk1002731@student.hamk.fi
+- amk1002731@student.hamk.fi
 ## Step 1:
 - First of all I create two users named **tupu** and **lupu**.
 - Then set **password** and other necessary information so that only that user can access the file.
