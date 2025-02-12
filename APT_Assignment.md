@@ -166,11 +166,11 @@ sudo apt install fakepackage
 
 ### 1. Use apt-mark to hold and unhold a package
 ```bash 
-sudo apt-mark hold tweak
+sudo apt-mark hold gimp 
 ```
 ### 2. Use apt-mark to unhold a package
 ```bash
-sudo apt-mark unhold tweak
+sudo apt-mark unhold gimp
 ```
 
 ***image***
@@ -184,4 +184,3 @@ sudo apt-mark unhold tweak
            - prevent dependencies 
            - Avoid unwanted feature changes 
 
-           
