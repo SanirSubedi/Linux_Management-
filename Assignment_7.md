@@ -4,7 +4,7 @@
 
 ## Part 1: Introduction to virtualization concepts
 
-1. *** Virtualization ***:A technology that lets you create virtual versions of computers, storage, or networks. It’s like running multiple computers inside one real computer.
+1. ***Virtualization***:A technology that lets you create virtual versions of computers, storage, or networks. It’s like running multiple computers inside one real computer.
 2. ***Hypervisor***: A software that creates and runs virtual machines. Think of it as a manager that allows multiple operating systems to run on the same computer.
 3. ***Virtual machines*** (VM): A software-based computer that acts like a real one. It has its own operating system, apps, and files, but runs inside another computer using a hypervisor.
 4. ***Containers***: A container is a sandboxed process running on a host machine that is isolated from all other processes running on that host machine. Containers are a lighter-weight, more agile way of handling virtualization—since they don’t use a hypervisor.It is an isolated environments that run applications with shared system resources.
